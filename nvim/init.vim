@@ -5,6 +5,23 @@ Plug 'sebdah/vim-delve'
 Plug 'hdima/python-syntax'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
+Plug 'szorfein/darkest-space'
+Plug 'jalvesaq/southernlights'
+Plug 'emhaye/ceudah.vim'
+Plug 'szorfein/darkest-space'
+Plug 'vim-scripts/dante.vim'
+Plug 'chr4/jellygrass.vim'
+Plug 'Zabanaa/neuromancer.vim'
+Plug 'gkjgh/cobalt'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'mxw/vim-jsx'
+Plug 'tpope/vim-markdown'
+Plug 'mxw/vim-jsx'
+Plug 'digitaltoad/vim-pug'
+Plug 'MvanDiemen/brighton.vim'
+Plug 'tmhedberg/SimpylFold'
+Plug 'vim-scripts/indentpython.vim'
 call plug#end()
 let mapleader = "\<space>"
 set cursorline
@@ -46,6 +63,10 @@ imap <C-w> <esc>^i
 imap <C-g> <esc>Gi
 imap <C-t> <esc>ggi
 
+nmap <leader>] :tabn<cr>
+nmap <leader>[ :tabp<cr>
+
+
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 
@@ -66,3 +87,40 @@ let g:NERDCommentEmptyLines = 1
 
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+
+
+" Set the background theme to dark
+set background = "dark"
+
+" Call the theme one
+colorscheme zerg
+
+" Don't forget set the airline theme as well.
+" let g:airline_theme = 'zerg'
+
+" This line enables the true color support.
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+" Note, the above line is ignored in Neovim 0.1.5 above, use this line instead.
+set termguicolors
+
+hi CursorLine term=bold cterm=bold guibg=Grey40
+
+" enable all Python syntax highlighting features
+let python_highlight_all = 1
+
+" pep8 stuff
+" au BufNewFile,BufRead *.py
+"     \ set tabstop=4
+"     \ set softtabstop=4
+"     \ set shiftwidth=4
+"     \ set textwidth=79
+"     \ set expandtab
+"     \ set autoindent
+"     \ set fileformat=unix
+
+" other type formatting
+" au BufNewFile,BufRead *.js, *.html, *.css
+"     \ set tabstop=2
+"     \ set softtabstop=2
+"     \ set shiftwidth=2
