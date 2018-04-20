@@ -20,8 +20,8 @@ Plug 'tpope/vim-markdown'
 Plug 'mxw/vim-jsx'
 Plug 'digitaltoad/vim-pug'
 Plug 'MvanDiemen/brighton.vim'
-Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim'
+Plug 'moll/vim-node'
 call plug#end()
 let mapleader = "\<space>"
 set cursorline
