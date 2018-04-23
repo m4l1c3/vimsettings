@@ -97,12 +97,14 @@ let g:NERDTrimTrailingWhitespace = 1
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Note, the above line is ignored in Neovim 0.1.5 above, use this line instead.
+let g:neuromancer_termcolors = 256
+let g:neuromancer_visibility = "high"
+let g:neuromancer_contrast = "high"
 set termguicolors
-
 " highlight CursorLine term=bold cterm=bold ctermbg=Black
 
 " Call the theme one
-colorscheme zerg
+colorscheme neuromancer
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
