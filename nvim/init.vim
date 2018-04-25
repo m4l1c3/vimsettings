@@ -92,15 +92,15 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 " Don't forget set the airline theme as well.
-" let g:airline_theme = 'zerg'
+let g:airline_theme = 'neuromancer'
 
 " This line enables the true color support.
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Note, the above line is ignored in Neovim 0.1.5 above, use this line instead.
-let g:neuromancer_termcolors = 256
-let g:neuromancer_visibility = "high"
-let g:neuromancer_contrast = "high"
+" let g:neuromancer_termcolors = 256
+" let g:neuromancer_visibility = "high"
+" let g:neuromancer_contrast = "high"
 set termguicolors
 " highlight CursorLine term=bold cterm=bold ctermbg=Black
 
