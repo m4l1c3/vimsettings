@@ -26,6 +26,8 @@ Plug 'jalvesaq/southernlights'
 Plug 'godlygeek/csapprox'
 Plug 'TroyFletcher/vim-colors-synthwave'
 Plug 'ruchee/vim-red'
+Plug 'shawncplus/skittles_berry'
+Plug 'Valloric/YouCompleteMe'
 call plug#end()
 let mapleader = "\<space>"
 " set cursorline
