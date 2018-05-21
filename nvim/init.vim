@@ -109,7 +109,7 @@ set termguicolors
 " highlight CursorLine term=bold cterm=bold ctermbg=Black
 
 " Call the theme one
-colorscheme synthwave
+colorscheme skittles_berry
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
