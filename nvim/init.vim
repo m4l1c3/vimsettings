@@ -5,7 +5,6 @@ Plug 'sebdah/vim-delve'
 Plug 'hdima/python-syntax'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'szorfein/darkest-space'
 Plug 'jalvesaq/southernlights'
 Plug 'emhaye/ceudah.vim'
 Plug 'szorfein/darkest-space'
@@ -15,7 +14,6 @@ Plug 'Zabanaa/neuromancer.vim'
 Plug 'gkjgh/cobalt'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'leafgarland/typescript-vim'
-Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-markdown'
 Plug 'mxw/vim-jsx'
 Plug 'digitaltoad/vim-pug'
@@ -113,4 +111,4 @@ colorscheme skittles_berry
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
-
+let g:python3_host_prog = '/usr/local/bin/python3.6'
