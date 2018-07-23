@@ -1,5 +1,6 @@
 call plug#begin()
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'fatih/vim-go'
 Plug 'sebdah/vim-delve'
 Plug 'hdima/python-syntax'
@@ -96,7 +97,9 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Don't forget set the airline theme as well.
 " let g:airline_theme = 'neuromancer'
-
+let g:airline_theme='bubblegum'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 " This line enables the true color support.
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:neuromancer_transbg=1
@@ -114,3 +117,5 @@ colorscheme skittles_berry
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
 
+" Always show statusline
+set laststatus=2
