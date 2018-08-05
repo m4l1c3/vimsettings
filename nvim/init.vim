@@ -1,4 +1,6 @@
 call plug#begin()
+Plug 'xolox/vim-colorscheme-switcher'
+Plug 'xolox/vim-misc'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'fatih/vim-go'
@@ -6,13 +8,8 @@ Plug 'sebdah/vim-delve'
 Plug 'hdima/python-syntax'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'jalvesaq/southernlights'
-Plug 'emhaye/ceudah.vim'
 Plug 'szorfein/darkest-space'
 Plug 'vim-scripts/dante.vim'
-Plug 'chr4/jellygrass.vim'
-Plug 'Zabanaa/neuromancer.vim'
-Plug 'gkjgh/cobalt'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'tpope/vim-markdown'
@@ -21,12 +18,76 @@ Plug 'digitaltoad/vim-pug'
 Plug 'MvanDiemen/brighton.vim'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'moll/vim-node'
-Plug 'jalvesaq/southernlights'
-Plug 'godlygeek/csapprox'
-Plug 'TroyFletcher/vim-colors-synthwave'
+Plug 'godlygeek/wsapprox'
 Plug 'ruchee/vim-red'
 Plug 'shawncplus/skittles_berry'
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'ajh17/VimCompletesMe'
+
+Plug 'kirecek/vim-kxxe256'
+Plug 'sts10/vim-pink-moon'
+Plug 'nightsense/snow'
+Plug 'Siphalor/vim-atomified'
+Plug 'neutaaaaan/iosvkem'
+Plug 'skreek/skeletor.vim'
+Plug 'napcs/vim-mycontrast'
+Plug 'TheAtlasEngine/PastelColors'
+Plug 'HenryNewcomer/vim-theme-papaya'
+Plug 'javipolo/vim'
+Plug 'vim-scripts/Relaxed-Green'
+Plug 'TroyFletcher/vim-colors-synthwave'
+Plug 'wimstefan/vim-artesanal'
+Plug 'gletort/vimConfigFiles'
+Plug 'jalvesaq/southernlights'
+Plug 'felipesousa/rupza'
+Plug 'vim-scripts/DuoTones-Dark'
+Plug 'emhaye/ceudah.vim'
+Plug 'archSeer/colibri.vim'
+Plug 'dim13/smyck.vim'
+Plug 'baines/vim-colorscheme-thaumaturge'
+Plug 'chr4/jellygrass.vim'
+Plug 'yuttie/hydrangea-vim'
+Plug 'Siltaar/primaries.vim'
+Plug 'Zabanaa/neuromancer.vim'
+Plug 'cnj4/horseradish256'
+Plug 'gkjgh/cobalt'
+Plug 'lu-ren/SerialExperimentsLain'
+Plug 'zakj/vim-mourning'
+Plug 'reewr/vim-monokai-phoenix'
+Plug 'vim-scripts/ChocolateLiquor'
+Plug 'arcticicestudio/nord-vim'
+Plug 'smancill/darkglass'
+Plug 'agude/vim-eldar'
+Plug 'broduo/broduo-color-scheme'
+Plug 'encody/nvim'
+Plug 'acoustichero/goldenrod.vim'
+Plug 'kitten/vim-adventurous'
+Plug 'andbar-ru/vim-unicon'
+Plug 'srcery-colors/srcery-vim'
+Plug 'bitpushr/cyberpunk.vim'
+Plug 'bounceme/highwayman'
+Plug 'tomsik68/vim-crystallite'
+Plug 'RussellBradley/vim-kings-away'
+Plug 'notpratheek/vim-luna'
+Plug 'aperezdc/vim-elrond'
+Plug 'atelierbram/vim-colors_duotones'
+Plug 'Valloric/vim-valloric-colorscheme'
+Plug 'jyota/vimColors'
+Plug 'vim-scripts/vibrantink'
+Plug 'mtglsk/mushroom'
+Plug 'yantze/pt_black'
+Plug 'vim-scripts/colorful256.vim'
+Plug 'vim-scripts/The-Vim-Gardener'
+Plug 'vim-scripts/blacklight'
+Plug 'trapd00r/neverland-vim-theme'
+Plug 'vim-scripts/grishin-color-scheme'
+Plug 'lxmzhv/vim'
+Plug 'marlun/vim-starwars'
+Plug 'w0ng/vim-hybrid'
+Plug 'sjl/badwolf'
+
+
 call plug#end()
 let mapleader = "\<space>"
 " set cursorline
@@ -71,6 +132,11 @@ imap <C-t> <esc>ggi
 nmap <leader>] :tabn<cr>
 nmap <leader>[ :tabp<cr>
 
+nmap <leader>p :NextColorScheme<cr>
+nmap <leader>o :PrevColorScheme<cr>
+nmap <leader>r :RandomColorScheme<cr>
+
+
 
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -95,22 +161,16 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Don't forget set the airline theme as well.
 " let g:airline_theme = 'neuromancer'
-let g:airline_theme='jet'
+let g:airline_theme='fairyfloss'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 " This line enables the true color support.
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-let g:neuromancer_transbg=1
-set background=dark
-" Note, the above line is ignored in Neovim 0.1.5 above, use this line instead.
-" let g:neuromancer_termcolors = 256
-" let g:neuromancer_visibility = "high"
-" let g:neuromancer_contrast = "high"
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set termguicolors
 " highlight CursorLine term=bold cterm=bold ctermbg=Black
 
 " Call the theme one
-colorscheme skittles_berry
+colorscheme neverland-darker
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
