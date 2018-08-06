@@ -24,6 +24,11 @@ Plug 'shawncplus/skittles_berry'
 " Plug 'Valloric/YouCompleteMe'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'ajh17/VimCompletesMe'
+Plug 'Shougo/deoplete.nvim'
+Plug 'zchee/deoplete-go'
+Plug 'wokalski/autocomplete-flow'
+Plug 'zchee/deoplete-jedi'
+
 
 Plug 'kirecek/vim-kxxe256'
 Plug 'sts10/vim-pink-moon'
