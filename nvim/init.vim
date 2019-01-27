@@ -170,7 +170,7 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Don't forget set the airline theme as well.
 " let g:airline_theme = 'neuromancer'
-let g:airline_theme='fairyfloss'
+let g:airline_theme='badwolf'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 " This line enables the true color support.
