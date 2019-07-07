@@ -27,8 +27,19 @@ Plug 'ajh17/VimCompletesMe'
 Plug 'Shougo/deoplete.nvim'
 Plug 'zchee/deoplete-go'
 Plug 'wokalski/autocomplete-flow'
-Plug 'zchee/deoplete-jedi'
+" Async autocompletion
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Completion from other opened files
+Plug 'Shougo/context_filetype.vim'
+" Python autocompletion
+Plug 'zchee/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
+" Just to add the python go-to-definition and similar features, autocompletion
+" from this plugin is disabled
+Plug 'davidhalter/jedi-vim'
+Plug 'Townk/vim-autoclose'
 
+" Automatically sort python imports
+Plug 'fisadev/vim-isort'
 
 Plug 'kirecek/vim-kxxe256'
 Plug 'sts10/vim-pink-moon'
@@ -182,4 +193,4 @@ let python_highlight_all = 1
 
 " Always show statusline
 set laststatus=2
-let g:python3_host_prog = '/usr/local/bin/python3.6'
+let g:python3_host_prog = '/usr/bin/python3'
